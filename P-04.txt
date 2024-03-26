@@ -1,0 +1,42 @@
+ARROW FUNCTIONS
+En JavaScript, las "arrow functions" (funciones flecha) son una característica introducida en ECMAScript 6 (también 
+conocido como ES6) que proporciona una sintaxis más concisa y clara para definir funciones. Las funciones flecha son 
+especialmente útiles para funciones simples y expresiones de funciones.
+EJEMPLO:
+// Sintaxis básica de una función flecha
+const miFuncion = () => {
+  // Código de la función
+};
+
+// Ejemplo de uso de una función flecha
+const sumar = (a, b) => {
+  return a + b;
+};
+
+console.log(sumar(5, 3)); // Output: 8
+En resumen, las funciones flecha son una adición útil a JavaScript que hace que la sintaxis de las funciones sea más concisa 
+y clara en muchos casos, especialmente para funciones simples y expresiones de funciones.
+LOS CALLBACKS
+os callbacks en JavaScript son funciones que se pasan como argumentos a otras funciones y se ejecutan después de que cierto 
+proceso o tarea se haya completado. Los callbacks son una parte fundamental del estilo de programación asincrónica en 
+JavaScript, donde se ejecutan tareas de forma no secuencial, permitiendo que el código continúe ejecutándose mientras se 
+espera que ciertas operaciones finalicen, como las solicitudes a servidores, operaciones de lectura/escritura de archivos, etc.
+EJEMPLO
+javascript
+Copy code
+// Definición de una función que toma un callback como argumento
+function miFuncionAsync(callback) {
+  // Simulando una tarea asincrónica (por ejemplo, una solicitud HTTP)
+  setTimeout(function() {
+    console.log("Tarea asincrónica completada");
+    // Llamada al callback después de completar la tarea
+    callback();
+  }, 2000); // Espera 2 segundos antes de llamar al callback
+}
+
+// Uso de la función con un callback
+miFuncionAsync(function() {
+  console.log("Callback ejecutado");
+});
+En resumen, los callbacks son una parte esencial de la programación asincrónica en JavaScript y se utilizan ampliamente 
+para manejar operaciones que toman tiempo, como solicitudes de red o lectura/escritura de archivos.
